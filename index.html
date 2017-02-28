@@ -18,6 +18,18 @@
       <img src="img/sadface.png" title="Sad Face" alt="Sad face hides.">
     </div>
   </div>
+  <script>
+    if (navigator.serviceWorker) {
+      navigator.serviceWorker.register('sw.js')
+        .then(function(registration){
+          // Registration succeeded.
+        })
+        .catch(function(err) {
+          // Registration failed.
+          console.log('ServiceWorker registration failed: ', err);
+        });
+    }
+  </script>
   <!--script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
