@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <body>
+<style>
+  div a, div span{
+  	font-size: 16dp;
+  }
+</style>
 <div><a href="http://qqwx.qq.com/s?aid=index&g_f=388">下载微云</a></div>
 
 <div><span id="download-link" style="text-decoration: underline;">下载微云</span></div>
 <script>
 	document.getElementById('download-link').addEventListener('click', function(){
-		window.location = "http://qqwx.qq.com/s?aid=index&g_f=388";
+		window.location.href = "http://qqwx.qq.com/s?aid=index&g_f=388";
 	}, false);
 </script>
 </body>
